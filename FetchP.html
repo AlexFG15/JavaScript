@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container my-5">
+        <!-- spinner Cragando -->
+        <section class="d-flex align-items-center d-none" id="loading">
+            <strong>Cargando...</strong>
+            <div class="spinner-border ms-auto" role="status" aria-hidden="true"></div>
+        </section>
+        <section class="row" id="card-dinamics">
+        </section>
+    </div>
+
+    <template id="templateCard">
+        <article class="col-12 col-md-6 col-lg-3 mb-3">
+       <div class="card text-center shadow">
+           <img src="https://rickandmortyapi.com/api/character/avatar/340.jpeg" alt="" class="card-img-top">
+           <div class="card-body">
+               <h5 class="card-title text-primary lead">
+                   Nombre del perosnaje 
+               </h5>
+               <p class="lead text-seconadry">Human</p>
+           </div>
+       </div> 
+   </article>
+   </template>
+  
+    <script type="text/javascript" src="Function.js"></script>
+</body>
+</html>
