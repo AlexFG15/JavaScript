@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>Estudiantes y Profesores</title>
+  </head>
+  <body>
+
+    <div class="container my-5">
+
+      <h1>Estudiantes y Profesores</h1>
+      <div class="alert alert-danger d-none">Ingrese todos los datos  </div>
+      <form id="formulario">
+        <input type="text" class="form-control mb-2" name="nombre" placeholder="Ingresa nombre" required/>
+        <input type="number" class="form-control mb-2" name="edad" placeholder="Ingresa edad" required />
+
+        <select class="form-select mb-2" aria-label="Default select example" name="opcion">
+          <option value="Estudiante" selected>Estudiante</option>
+          <option value="Profesor">Profesor</option>
+        </select>
+         <button class="btn btn-primary" type="submit">Agregar</button>
+      </form>
+
+      <section class="row mt-3">
+        <div class="col-6" id="cardEstudiante">
+        </div>
+        <div class="col-6"id="cardProfesor">
+        </div>
+      </section>
+    </div>
+
+    <template id="estudiante">
+      <article class="card mb-2">
+        <div class="card-body">
+          <h5>
+            <span class="text-primary">Nombre</span>
+            <span class="badge bg-success">Aprobado</span>
+          </h5>
+          <h6></h6>
+          <p class="lead">Edad</p>
+          <button class="btn btn-success">Aprobar</button>
+          <button class="btn btn-danger">Reprobar</button>
+        </div>
+      </article>
+    </template>
+
+    <template id="profesor">
+      <article class="card mb-2 bg-dark text-white"> 
+        <div class="card-body">
+          <h5>Nombre</h5>
+          <h6>Profesor</h6>
+          <p class="lead">Edad</p>
+        </div>
+      </article>
+    </template>
+
+    <script type="text/javascript" src="function.js"></script>
+  </body>
+</html>
